@@ -3,7 +3,7 @@ const express = require('express');
 //express starts
 const app = express();
 //port number
-const port = 8000;
+//const port = 8000;
 //expressLayouts are used to create the layout and makes easier for creating different post or content in same design
 const expressLayouts = require('express-ejs-layouts');
 //body parser is used to get extarct the data 
@@ -39,9 +39,9 @@ app.set('views','./views');
 
 app.use('/',require('./routes'));
 //port running
-app.listen(port,(err)=>{
+app.listen(process.env.PORT,(err)=>{
     if(err){
-        console.log("error in port")
+        console.log("error in port");
     }
     console.log("port success");
 })
