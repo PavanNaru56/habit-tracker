@@ -17,6 +17,8 @@
     "expess": "^0.0.1-security",
     "express-ejs-layouts": "^2.5.1",
     "mongoose": "^8.1.0",
+    "node-sass-middleware": "^1.1.0",
+    "vercel": "^33.3.0",
     "views": "^1.0.2"
   }
 }
